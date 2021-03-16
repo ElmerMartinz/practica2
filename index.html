@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>prueba</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="practica2"><label style="color: rgb(0,62,125);font-size: 32px;">{{mesaje}}</label>
+        <div class="row">
+            <div class="col-md-6">
+                <div><label>Radio:&nbsp; &nbsp; &nbsp;</label><input type="number" id="txtRadio" name="inputRadio" min="0"></div>
+                <div><label>CentroX:&nbsp;</label><input type="number" id="txtX" name="inputX"></div>
+                <div><label>CentroY:&nbsp;</label><input type="number" id="txtY" name="inputX"></div><button class="btn btn-primary" type="button" v-on:click="calcular">Calcular</button><button class="btn btn-primary" type="button" v-on:click="limpiar" style="margin-left: 50px;">Limpiar</button>
+            </div>
+            <div class="col" id="grafico">
+                <div><label>Radio:&nbsp;</label><label id="labelRadio"></label></div>
+                <div><label>Perimetro:&nbsp;</label><label id="labelPerimetro"></label></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="assets/js/vue.js"></script>
+</body>
+
+</html>
